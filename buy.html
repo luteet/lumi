@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+    <!-- <link rel="preload" as="style" href="async_style.css" onload="this.rel='stylesheet'"> -->
+    <script>
+        let fadeInOnLoad = document.createElement('link');
+        fadeInOnLoad.rel = 'stylesheet';
+        fadeInOnLoad.href = 'css/fade-in-onload.css';
+
+        document.head.appendChild(fadeInOnLoad);
+        
+        window.onload = function() {
+            
+            let fadeInOnLoadImgList = document.querySelectorAll('._fade-in-onload-img');
+
+            fadeInOnLoadImgList.forEach(element => {
+                element.classList.add('_loaded');
+            })
+
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="offset-check-js"></div>
+    <header class="header">
+        <div class="header__container _container">
+            <a href="#" class="header__logo header__menu-logo">
+                <span class="header__logo--text header__menu-logo--text">
+                    ЛЮМИ - здоровье от природы
+                </span>
+                <img src="img/logo.svg" alt="Логотип" width="69" class="header__logo--img">
+            </a>
+            <nav class="header__nav">
+                <div class="header__nav--body">
+                    <button class="header__nav--close-btn _header-menu-close-btn">
+                        ✕
+                    </button>
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="header__nav--item header__nav--logo">
+                            <a href="#" class="header__nav--link header__nav--logo-link">
+                                <span class="header__nav--logo-text">
+                                    ЛЮМИ - здоровье от природы
+                                </span>
+                                <img src="img/logo.svg" width="69" loading="lazy" alt="" class="header__nav--logo-img">
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Где купить
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Вопрос - ответ
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="header__burger _burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+
+
+<div class="wrapper">
+    <section class="buy-intro page-intro _bg-parent">
+    <div class="page-intro__bg _bg">
+        <img src="img/bg-elems/head-section-bg.jpg" loading="lazy" width="0" alt="" class="page-intro__bg--img _bg-img">
+    </div>
+    <div class="buy-intro__container page-intro__container _container">
+        <h1 class="buy-intro__title page-intro__title _main-title _center">
+            Где купить
+        </h1>
+    </div>
+</section>
+    <section class="buy-content _mt-40">
+        <div class="buy-content__container _container">
+            <div class="buy-content__block _content-block">
+                <div style="width: 100%; height: 530px;"></div>
+            </div>
+            <div class="buy-content__block buy-content__logo-block _content-block">
+                <div class="buy-content__logo-block--item">
+                    <h2 class="buy-content__logo-block--title">
+                        Онлайн аптеки
+                    </h2>
+                    <ul class="buy-content__logo-block--list">
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/online-market/logo-1.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/online-market/logo-2.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/online-market/logo-3.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                    </ul>
+                </div>
+                <div class="buy-content__logo-block--item">
+                    <h2 class="buy-content__logo-block--title">
+                        Маркетплейсы
+                    </h2>
+                    <ul class="buy-content__logo-block--list">
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/marketplace/logo-1.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/marketplace/logo-2.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/marketplace/logo-3.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/marketplace/logo-4.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                        <li class="buy-content__logo-block--li">
+    <img src="img/buy/marketplace/logo-5.png" width="100" loading="lazy" alt="" class="buy-content__logo-block--img">
+</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="buy-content__footer _center">
+                <h2 class="buy-content__footer--title _title _alt">
+                    В каждой аптеке вашего города
+                </h2>
+                <div class="buy-content__footer--text">
+                    <p>
+                        Если не нашли, напишите нам
+                        <a href="mailto:office@lumi.spb.ru" class="buy-content__footer--link _link">office@lumi.spb.ru</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer class="footer">
+        <div class="footer__container _container">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" width="337" loading="lazy" alt="" class="footer__logo--img">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav--list">
+                    <li class="footer__nav--item">
+                        <a href="+78123277885" class="footer__nav--link">
+                            +7 (812) 327-78-85
+                        </a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="mailto:office@lumi.spb.ru" class="footer__nav--link">
+                            office@lumi.spb.ru
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copy">
+                © ООО Люми <br>
+                <span class="footer__copy--year">
+                    2000-2021
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

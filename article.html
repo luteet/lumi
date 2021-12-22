@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+    <!-- <link rel="preload" as="style" href="async_style.css" onload="this.rel='stylesheet'"> -->
+    <script>
+        let fadeInOnLoad = document.createElement('link');
+        fadeInOnLoad.rel = 'stylesheet';
+        fadeInOnLoad.href = 'css/fade-in-onload.css';
+
+        document.head.appendChild(fadeInOnLoad);
+        
+        window.onload = function() {
+            
+            let fadeInOnLoadImgList = document.querySelectorAll('._fade-in-onload-img');
+
+            fadeInOnLoadImgList.forEach(element => {
+                element.classList.add('_loaded');
+            })
+
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="offset-check-js"></div>
+    <header class="header">
+        <div class="header__container _container">
+            <a href="#" class="header__logo header__menu-logo">
+                <span class="header__logo--text header__menu-logo--text">
+                    ЛЮМИ - здоровье от природы
+                </span>
+                <img src="img/logo.svg" alt="Логотип" width="69" class="header__logo--img">
+            </a>
+            <nav class="header__nav">
+                <div class="header__nav--body">
+                    <button class="header__nav--close-btn _header-menu-close-btn">
+                        ✕
+                    </button>
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="header__nav--item header__nav--logo">
+                            <a href="#" class="header__nav--link header__nav--logo-link">
+                                <span class="header__nav--logo-text">
+                                    ЛЮМИ - здоровье от природы
+                                </span>
+                                <img src="img/logo.svg" width="69" loading="lazy" alt="" class="header__nav--logo-img">
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Где купить
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Вопрос - ответ
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="header__burger _burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+
+
+<div class="wrapper">
+    <section class="article-intro page-intro _bg-parent">
+    <div class="page-intro__bg _bg">
+        <img src="img/bg-elems/head-section-bg.jpg" loading="lazy" width="0" alt="" class="page-intro__bg--img _bg-img">
+    </div>
+    <div class="article-intro__container page-intro__container _container">
+        <h1 class="article-intro__title page-intro__title _main-title _center">
+            Статьи
+        </h1>
+    </div>
+</section>
+    <section class="article-block _mt-40 _mb40">
+        <div class="article-block__container _container">
+            <div class="article-block__body _content-block">
+                <div class="article-block__header">
+                    <h2 class="article-block__title _main-title _alt">
+                        Заголовок
+                    </h2>
+                    <a href="article-list.html" class="article-block__return-link _link">
+                        Назад к списку
+                    </a>
+                </div>
+                <div class="article-block__content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                    <div class="article-block__content--image">
+                        <picture>
+                            <source srcset="img/article/image.webp" type="image/webp">
+                            <img src="img/article/image.jpg" loading="lazy" width="700" alt="" class="article-block__content--image-img _fade-in-onload-img">
+                        </picture>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+                <div class="article-block__footer">
+                    <h3 class="article-block__footer--title _title _alt">
+                        Продукции из статьи:
+                    </h3>
+                    <ul class="article-block__footer--list article-block__product-list">
+                        <li class="article-block__product-item">
+                            <div class="article-block__product-item--body">
+                                <a href="#" class="article-block__product-item--image">
+                                    <picture>
+                                        <source srcset="img/article/product.webp" type="image/webp">
+                                        <img src="img/article/product.png" alt="" width="200" class="article-block__product-item--img">
+                                    </picture>
+                                </a>
+                                <h4 class="article-block__product-item--title">
+                                    Витамин С
+                                </h4>
+                                <span class="article-block__product-item--price">
+                                    <b>
+                                        1000 р.
+                                    </b>
+                                </span>
+                                <a href="#" class="article-block__product-item--link _link">
+                                    Подробнее
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer class="footer">
+        <div class="footer__container _container">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" width="337" loading="lazy" alt="" class="footer__logo--img">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav--list">
+                    <li class="footer__nav--item">
+                        <a href="+78123277885" class="footer__nav--link">
+                            +7 (812) 327-78-85
+                        </a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="mailto:office@lumi.spb.ru" class="footer__nav--link">
+                            office@lumi.spb.ru
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copy">
+                © ООО Люми <br>
+                <span class="footer__copy--year">
+                    2000-2021
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>

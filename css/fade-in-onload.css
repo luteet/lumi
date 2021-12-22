@@ -1,0 +1,7 @@
+._fade-in-onload-img {
+    opacity: 0;
+}
+._fade-in-onload-img._loaded {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}

@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
+    <!-- <link rel="preload" as="style" href="async_style.css" onload="this.rel='stylesheet'"> -->
+    <script>
+        let fadeInOnLoad = document.createElement('link');
+        fadeInOnLoad.rel = 'stylesheet';
+        fadeInOnLoad.href = 'css/fade-in-onload.css';
+
+        document.head.appendChild(fadeInOnLoad);
+        
+        window.onload = function() {
+            
+            let fadeInOnLoadImgList = document.querySelectorAll('._fade-in-onload-img');
+
+            fadeInOnLoadImgList.forEach(element => {
+                element.classList.add('_loaded');
+            })
+
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="offset-check-js"></div>
+    <header class="header">
+        <div class="header__container _container">
+            <a href="#" class="header__logo header__menu-logo">
+                <span class="header__logo--text header__menu-logo--text">
+                    ЛЮМИ - здоровье от природы
+                </span>
+                <img src="img/logo.svg" alt="Логотип" width="69" class="header__logo--img">
+            </a>
+            <nav class="header__nav">
+                <div class="header__nav--body">
+                    <button class="header__nav--close-btn _header-menu-close-btn">
+                        ✕
+                    </button>
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Статьи
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Продукция
+                            </a>
+                        </li>
+                        <li class="header__nav--item header__nav--logo">
+                            <a href="#" class="header__nav--link header__nav--logo-link">
+                                <span class="header__nav--logo-text">
+                                    ЛЮМИ - здоровье от природы
+                                </span>
+                                <img src="img/logo.svg" width="69" loading="lazy" alt="" class="header__nav--logo-img">
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Где купить
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Вопрос - ответ
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="#" class="header__nav--link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="header__burger _burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+
+
+    <div class="wrapper">
+        <!-- <section class="intro">
+            <div class="intro__container _container">
+                .intro__
+            </div>
+        </section> -->
+    </div>
+
+        <footer class="footer">
+        <div class="footer__container _container">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" width="337" loading="lazy" alt="" class="footer__logo--img">
+            </a>
+            <nav class="footer__nav">
+                <ul class="footer__nav--list">
+                    <li class="footer__nav--item">
+                        <a href="+78123277885" class="footer__nav--link">
+                            +7 (812) 327-78-85
+                        </a>
+                    </li>
+                    <li class="footer__nav--item">
+                        <a href="mailto:office@lumi.spb.ru" class="footer__nav--link">
+                            office@lumi.spb.ru
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__copy">
+                © ООО Люми <br>
+                <span class="footer__copy--year">
+                    2000-2021
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/libs.min.js"></script> -->
+    <script src="js/main.min.js"></script>
+</body>
+</html>
