@@ -14,12 +14,16 @@
         document.head.appendChild(fadeInOnLoad);
         
         window.onload = function() {
-            
-            let fadeInOnLoadImgList = document.querySelectorAll('._fade-in-onload-img');
 
-            fadeInOnLoadImgList.forEach(element => {
-                element.classList.add('_loaded');
-            })
+            let style = document.createElement('style');
+            style.innerHTML = 
+            `
+            ._fade-in-onload-img {
+                opacity: 1;
+                transition: opacity .2s ease-in-out;
+            }
+            `;
+            document.head.appendChild(style);
 
         }
     </script>
@@ -107,9 +111,15 @@
     <section class="article-list-block _mb40 _mt40">
         <div class="article-list-block__container _container">
             <div class="article-list-block__body">
-                <div class="article-list-block__header">
-                    
-                </div>
+                <form action="#" class="article-list-block__header article-list-block__sort">
+                    <label class="article-list-block__sort--label">
+                        <span class="article-list-block__sort--icon _icon-select-arrow"></span>
+                        <select name="sort" class="article-list-block__sort--select">
+                            <option value="new">Сначала новые</option>
+                            <option value="old">Сначала старые</option>
+                        </select>
+                    </label>
+                </form>
                 <ul class="article-list-block__list">
                     <li class="article-list-block__item">
     <a href="article.html" class="article-list-block__item--body">

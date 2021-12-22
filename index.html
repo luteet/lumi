@@ -14,12 +14,16 @@
         document.head.appendChild(fadeInOnLoad);
         
         window.onload = function() {
-            
-            let fadeInOnLoadImgList = document.querySelectorAll('._fade-in-onload-img');
 
-            fadeInOnLoadImgList.forEach(element => {
-                element.classList.add('_loaded');
-            })
+            let style = document.createElement('style');
+            style.innerHTML = 
+            `
+            ._fade-in-onload-img {
+                opacity: 1;
+                transition: opacity .2s ease-in-out;
+            }
+            `;
+            document.head.appendChild(style);
 
         }
     </script>
