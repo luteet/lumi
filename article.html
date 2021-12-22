@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!-- <link rel="SHORTCUT ICON" href="img/logo.svg" type="image/svg"> -->
-    <!-- <link rel="preload" as="style" href="async_style.css" onload="this.rel='stylesheet'"> -->
     <script>
         let fadeInOnLoad = document.createElement('link');
         fadeInOnLoad.rel = 'stylesheet';
@@ -16,13 +15,7 @@
         window.onload = function() {
 
             let style = document.createElement('style');
-            style.innerHTML = 
-            `
-            ._fade-in-onload-img {
-                opacity: 1;
-                transition: opacity .2s ease-in-out;
-            }
-            `;
+            style.innerHTML = '._fade-in-onload-img {opacity: 1;transition: opacity .2s ease-in-out;}';
             document.head.appendChild(style);
 
         }
@@ -52,7 +45,7 @@
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#" class="header__nav--link">
+                            <a href="article-list.html" class="header__nav--link">
                                 Статьи
                             </a>
                         </li>
@@ -70,7 +63,7 @@
                             </a>
                         </li>
                         <li class="header__nav--item">
-                            <a href="#" class="header__nav--link">
+                            <a href="buy.html" class="header__nav--link">
                                 Где купить
                             </a>
                         </li>
@@ -117,6 +110,7 @@
                     </h2>
                     <a href="article-list.html" class="article-block__return-link _link">
                         Назад к списку
+                        <span class="article-block__return-link--icon _icon-arrow"></span>
                     </a>
                 </div>
                 <div class="article-block__content">
